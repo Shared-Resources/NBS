@@ -1,0 +1,7 @@
+select distinct(COD_ACESSO) from sistema_acesso_funcao saf where cod_funcao in (85, 86); --Acessos a serem juntados
+
+select * from sistema_acesso_funcao where cod_funcao = 96; --Nova Função Criada Manual
+
+insert into sistema_acesso_funcao (Cod_Acesso, cod_funcao) 
+select distinct(COD_ACESSO), 96 from sistema_acesso_funcao saf where cod_funcao in (85, 86) 
+--Conferir total de linhas inseridas tem que ser o mesmo da primeira query
