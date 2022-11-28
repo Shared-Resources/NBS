@@ -1,0 +1,7 @@
+SELECT L.*, ROWID FROM ITENS_DE_PARA L
+WHERE L.COD_ITEM IN ('BH4T/   P1508/AA/');
+/* Excluir linha */
+
+
+select ic.*, rowid from Itens_Custos ic where cod_item = 'AN15/   13006/AA/';
+/* MUDAR Ativo para S*/
