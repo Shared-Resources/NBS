@@ -1,1 +1,11 @@
-select v.*, rowid from venda_fins_diversos v where cod_empresa = ' ' and controle = ' ' and serie = 'A1';
+select * from venda_fins_diversos  where cod_empresa = &EMP and controle = %NF;
+
+select v.emissao, v.*, rowid from vendas  v  where cod_empresa = &EMP and controle = %NF;
+/*
+update venda_fins_diversos set DADOS_ADICIONAIS = ' ', TEXTO_SERVICO = ' ' 
+ where cod_empresa = &EMP and controle = %NF;
+*/
+/*
+update vendas set emissao = sysdate
+where cod_empresa = 24 and controle = 9080;
+*/
