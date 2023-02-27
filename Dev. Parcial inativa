@@ -1,0 +1,2 @@
+select p.forcar_conf_dev_canc, p.*, rowid from parm_sys3 p
+--Trocar S para N
