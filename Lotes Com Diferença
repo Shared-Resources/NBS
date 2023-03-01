@@ -1,3 +1,3 @@
-select v.chassi_completo, v.*, rowid from vendas v where v.controle = 90672 and cod_empresa = 30;
+select v.icms_st_dev, v.*, rowid from vendas v where v.controle = 90672 and cod_empresa = 30;
 
 select v.Pis_Cofins_Referencia, v.*, rowid from veiculos v where v.chassi_completo = '9C2KC2500PR038715';
