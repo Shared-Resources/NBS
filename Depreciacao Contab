@@ -1,0 +1,10 @@
+       select p.*, rowid
+              from pat_depreciacao p
+             where valor_depreciado > 0
+               and cod_empresa = 21
+               and trunc(data_ref) >= to_date('30/04/2023','dd/mm/yyyy')
+               and trunc(data_ref) <= to_date('30/04/2023','dd/mm/yyyy') and cod_patrimonio not in (      select cod_patrimonio
+                         
+                      from pat_cadastro x
+                     where x.cod_empresa = 21
+                      )
